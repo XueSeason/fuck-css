@@ -33,7 +33,7 @@ link 必须放在 head 元素中
 1. type 总是 **text/css** 这个值描述了 link 加载数据的类型
 1. media 属性，这里使用 all，说明样式表应用于所有表现媒体。其他常用的还有 print 和 screen，前者用于打印机和打印预览，后者用于 Web 浏览器。
 
-定义候选样式表，需要将 rel 设置为 **alternate styleshett**，浏览器会使用 link 元素的 **title** 属性生成候选样式列表。如果没有 title，那么它将作为永久样式表，始终用于文档的显示，这通常是我们默认做的。
+定义候选样式表，需要将 rel 设置为 **alternate styleshett**，浏览器会使用 link 元素的 **title** 属性生成候选样式列表。如果没有 title，默认将作为永久样式表，始终用于文档的显示。
 
 ```html
 <link rel="alternate stylesheet" title="Default" type="text/css" href="style.css">
